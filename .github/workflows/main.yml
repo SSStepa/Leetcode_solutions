@@ -6,6 +6,6 @@ jobs:
     steps:
       - name: Get repository code
         uses: actions/checkout@v3
-      - name: Run testiong file
+      - name: Run testing file
         run: bash main.bash
       
