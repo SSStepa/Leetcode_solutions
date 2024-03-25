@@ -5,4 +5,4 @@ In every file:
 - solution code
 - testing code
 
-https://github.com/SSStepa/Leetcode_solutions/actions/workflows/main.yml/badge.svg
+[Result of actions](https://github.com/SSStepa/Leetcode_solutions/actions/workflows/main.yml/badge.svg)
