@@ -11,7 +11,7 @@ Constraints:
 """
 
 
-def maximumProduct(self, nums: list[int]) -> int:
+def maximumProduct(nums: list[int]) -> int:
     nums = sorted(nums)
     if nums[0] >= 0:
         y, z = -2, -3

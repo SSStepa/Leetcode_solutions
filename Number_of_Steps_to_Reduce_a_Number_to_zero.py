@@ -10,7 +10,7 @@ Constraints:
 """
 
 
-def numberOfSteps(self, num: int) -> int:
+def numberOfSteps(num: int) -> int:
     x = 0
     while num != 0:
         if num % 2 == 0:
@@ -27,7 +27,7 @@ values = [
     {"input": 14, "output": 6},
     {"input": 8, "output": 4},
     {"input": 123, "output": 12},
-    {"input": 10**6, "output": 26},
+    {"input": 10 ** 6, "output": 26},
 ]
 
 

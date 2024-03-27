@@ -12,7 +12,7 @@ Constraints:
 """
 
 
-def runningSum(self, nums: list[int]) -> list[int]:
+def runningSum(nums: list[int]) -> list[int]:
     our_list = [nums[0]]
     y = 1
     element = our_list[-1]
