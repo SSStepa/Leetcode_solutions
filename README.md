@@ -4,3 +4,5 @@ In every file:
 - info
 - solution code
 - testing code
+
+![Result of actions](https://github.com/SSStepa/Leetcode_solutions/actions/workflows/main.yml/badge.svg)
