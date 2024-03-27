@@ -27,18 +27,15 @@ def fizzBuzz(n: int) -> list[str]:
     return our_list
 
 
-def test(testcase):
-    if testcase[-1] == fizzBuzz(testcase[0]):
-        pass
-    else:
-        print("Wrong")
-
-
 # leetcode examples:
-run = [
-    (3, ["1", "2", "Fizz"]),
-    (5, ["1", "2", "Fizz", "4", "Buzz"]),
-    [15, ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"]]
+values = [
+    {"input": 3, "output": ["1", "2", "Fizz"]},
+    {"input": 5, "output": ["1", "2", "Fizz", "4", "Buzz"]},
+    {"input": 15, "output": ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"]},
 ]
-for i in run:
-    test(i)
+
+
+def test_412(testcases=values):
+    for testcase in testcases:
+        if fizzBuzz(testcase["input"]) != testcase["output"]:
+            raise Exception("Wrong answer in:", testcase)
