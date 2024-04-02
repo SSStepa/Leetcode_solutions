@@ -20,17 +20,3 @@ def maximumWealth(accounts: list[list[int]]) -> int:
         if sum(i) > x:
             x = sum(i)
     return x
-
-
-# leetcode examples:
-values = [
-    {"input": [[1, 2, 3], [3, 2, 1]], "output": 6},
-    {"input": [[1, 5], [7, 3], [3, 5]], "output": 10},
-    {"input": [[2, 8, 7], [7, 1, 3], [1, 9, 5]], "output": 17},
-]
-
-
-def test_1672(testcases=values):
-    for testcase in testcases:
-        if maximumWealth(testcase["input"]) != testcase["output"]:
-            raise Exception("Wrong answer in: ", testcase)

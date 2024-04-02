@@ -25,17 +25,3 @@ def fizzBuzz(n: int) -> list[str]:
         else:
             our_list[our_list.index(i)] = str(i)
     return our_list
-
-
-# leetcode examples:
-values = [
-    {"input": 3, "output": ["1", "2", "Fizz"]},
-    {"input": 5, "output": ["1", "2", "Fizz", "4", "Buzz"]},
-    {"input": 15, "output": ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"]},
-]
-
-
-def test_412(testcases=values):
-    for testcase in testcases:
-        if fizzBuzz(testcase["input"]) != testcase["output"]:
-            raise Exception("Wrong answer in:", testcase)

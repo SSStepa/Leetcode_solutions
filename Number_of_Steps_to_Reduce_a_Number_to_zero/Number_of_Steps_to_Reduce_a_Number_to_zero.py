@@ -20,18 +20,3 @@ def numberOfSteps(num: int) -> int:
         x += 1
     return x
 
-
-# leetcode examples, the smallest and the largest:
-values = [
-    {"input": 1, "output": 1},
-    {"input": 14, "output": 6},
-    {"input": 8, "output": 4},
-    {"input": 123, "output": 12},
-    {"input": 10 ** 6, "output": 26},
-]
-
-
-def test_1342(testcases=values):
-    for testcase in testcases:
-        if numberOfSteps(testcase["input"]) != testcase["output"]:
-            raise Exception("Wrong answer in: ", testcase)

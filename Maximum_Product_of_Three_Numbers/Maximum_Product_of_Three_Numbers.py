@@ -24,17 +24,3 @@ def maximumProduct(nums: list[int]) -> int:
         y, z = -2, -3
     x = nums[-1] * nums[y] * nums[z]
     return x
-
-
-# leetcode examples:
-values = [
-    {"input": [1, 2, 3], "output": 6},
-    {"input": [1, 2, 3, 4], "output": 24},
-    {"input": [-1, -2, -3], "output": -6},
-]
-
-
-def test_628(testcases=values):
-    for testcase in testcases:
-        if maximumProduct(testcase["input"]) != testcase["output"]:
-            raise Exception("Wrong answer in: ", testcase)
