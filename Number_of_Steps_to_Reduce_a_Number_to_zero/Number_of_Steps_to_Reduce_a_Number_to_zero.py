@@ -19,4 +19,3 @@ def numberOfSteps(num: int) -> int:
             num -= 1
         x += 1
     return x
-

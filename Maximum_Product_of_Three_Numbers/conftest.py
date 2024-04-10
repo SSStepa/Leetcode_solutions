@@ -14,4 +14,3 @@ def testcase_2():
 @pytest.fixture
 def testcase_3():
     return {"input": [-1, -2, -3], "output": -6}
-

@@ -18,10 +18,9 @@ def testcase_3():
 
 @pytest.fixture
 def testcase_4():
-    return {"input": -2 ** 31, "output": False}
+    return {"input": -(2 ** 31), "output": False}
 
 
 @pytest.fixture
 def testcase_5():
     return {"input": (2 ** 31 - 1), "output": False}
-
